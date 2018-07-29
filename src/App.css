@@ -1,0 +1,135 @@
+.center {
+  text-align: center;
+}
+
+option {
+  padding: 4px 0px;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  margin-top: 20px;
+  background-color: beige;
+}
+
+.part2 {
+  border: solid 1px purple;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+
+.part1 {
+  border: solid 1px purple;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  height: 310px;
+}
+
+.card-header {
+  cursor: pointer;
+}
+
+.item,
+.mybtn,
+.search,
+.mybtnsearch,
+.status,
+.mybtnsort {
+  border: none;
+  background: transparent;
+  color: black;
+}
+
+.item:focus,
+.mybtn:focus,
+.search:focus,
+.item:read-only,
+.status:focus {
+  background: transparent;
+  box-shadow: none;
+}
+
+.writing,
+.item:focus:read-write {
+  background-color: rgb(224, 224, 224);
+}
+
+.item:hover,
+.mybtn:hover {
+  color: black;
+}
+
+.cursor {
+  cursor: auto;
+}
+
+.boderdarkcyan,
+.boderdarkcyan:focus {
+  border-bottom: 2px solid darkcyan;
+}
+
+.bodercrimson,
+.bodercrimson:focus {
+  border-bottom: 2px solid crimson;
+}
+
+.borderadd,
+.borderadd:focus {
+  border-bottom: 2px solid #fd8e2f;
+}
+
+.search,
+.search::placeholder,
+.search:focus {
+  color: black;
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+
+.search:focus {
+  border-bottom: 2px solid rgb(128, 11, 182);
+}
+
+.mybtnsearch:hover,
+.mybtnsearch:disabled,
+.status:hover,
+.status:focus,
+.mybtnsort:hover {
+  background: transparent;
+  color: black;
+}
+
+th:first-child {
+  width: 50px;
+}
+
+th:nth-child(2) {
+  padding-bottom: 10px;
+}
+
+th:nth-child(3) {
+  padding-bottom: 6px;
+}
+
+.mydrop {
+  padding: 0;
+}
+
+.mydropdown {
+  padding: 6px, 20px;
+}
+
+.tick {
+  padding: 6px 10px;
+}
+
+.inline {
+  float: right;
+}
+
+.mybtnsort:focus {
+  border-radius: 0px;
+}
