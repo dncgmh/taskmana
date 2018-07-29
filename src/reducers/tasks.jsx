@@ -4,9 +4,6 @@ import { findIndex } from 'lodash'
 var data = JSON.parse(localStorage.getItem("tasks"))
 var initialState = data ? data : [];
 
-var randomId = () => {
-    return Math.floor((1 + Math.random()) * 0x100000000 + 1).toString(16)
-}
 
 var myReducer = (state = initialState, action) => {
     let id = -1;
@@ -16,10 +13,10 @@ var myReducer = (state = initialState, action) => {
 
         case types.ADDTASK:
             var newTask = {
-                id: randomId(),
+                id: Date.now(),
                 name: action.task.name,
                 status: action.task.status
-            }
+            }            
             state.push(newTask)
             localStorage.setItem("tasks", JSON.stringify(state))
             return [...state];
